@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cylindo Edson</title>
+    <link rel="preconnect" href="https://content.cylindo.com" />
+    <script
+      type="module"
+      src="https://viewer-cdn.cylindo.com/v1/index.mjs"
+      async
+    ></script>
+    <script
+      type="module"
+      src="https://viewer-cdn.cylindo.com/v1/bar.mjs"
+      async
+    ></script>
+</head>
+<body>
+    <h1>App Cylindo</h1>
+    <p>Bienvenido</p>
+    <cylindo-viewer customer-id="5034" code="63116214"></cylindo-viewer>
+	//aqui va el otro sofa
+    <cylindo-viewer customer-id="5098" code="KINGBED PDP" presentation="gallery">
+  <cylindo-studio code="RS-ELMO DOUBLE" customer-id="5098" />
+  <cylindo-360-frame frame="10" />
+  <cylindo-360-frame frame="16" />
+  <cylindo-360-frame frame="22" />
+  <cylindo-thumbnail-bar />
+</cylindo-viewer>
+</cylindo-viewer>
+
+<div className="styled-thumbnail">
+  <style>
+    {`
+      .styled-thumbnail {
+        --icon-color: SteelBlue;
+        --chevron-color: SteelBlue;
+        --item-gap: 1rem;
+      }
+      .styled-thumbnail ::part(item) {
+        cursor: crosshair;
+      }
+    
+    `}
+  </style>
+  <cylindo-viewer customer-id="5098" code="ARMCHAIR-PDP">
+    <cylindo-studio code="RS-BARILA-A" customer-id="5098" />
+    <cylindo-360-frame frame="10" />
+    <cylindo-360 frame="3" />
+    <cylindo-model />
+    <cylindo-thumbnail-bar />
+  </cylindo-viewer>
+</div>
+</body>
+</html>
